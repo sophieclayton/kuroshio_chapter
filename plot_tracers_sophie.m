@@ -11,15 +11,7 @@ for day=days
   matdate=datestr(stamp,'mmm dd yyyy');
   load(sprintf('/nobackup1/mdehghani/CS_Trunk/%10.10d/Lagrangian/MAT/Trajectory/%10.10d_%10.10d.mat',run_number,run_number,day));
   field=[];
-  min_lon=min(lon);
-  max_lon=max(lon);
-  min_lat=min(lat);
-  max_lat=max(lat);
-  lon=(min_lon):Xres:(max_lon);	
-  lat=(min_lat):Yres:(max_lat);
-  lon=lon';
-  lat=lat';	
-  
+œ
   hold on
   imagesc(lon, lat, displacement')
   colormap('copper')
